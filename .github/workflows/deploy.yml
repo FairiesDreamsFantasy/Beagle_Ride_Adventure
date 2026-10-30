@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - Stable
+      - main
   workflow_dispatch:
 
 jobs:
@@ -42,4 +43,4 @@ jobs:
           git config --local user.name "Fairies Dreams Fantasy"
           git add Public/
           git commit -m "Automated build: Sync standalone assets [skip ci]" || echo "No changes to commit"
-          git push origin Stable
+          git push origin HEAD || true

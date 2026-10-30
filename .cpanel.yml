@@ -3,9 +3,7 @@
 # cPanel Deployment Configuration - Beagle Ride DND
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/fairiesd/public_html/Arcade/Beagle-Ride-DND
-    - export DEPLOYPATH_ALT=/home/fairiesd/public_html/Arcade/Beagle_Ride_DND
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/mkdir -p $DEPLOYPATH_ALT
-    - /bin/cp -R Public/Beagle_Ride_DND/. $DEPLOYPATH/
-    - /bin/cp -R Public/Beagle_Ride_DND/. $DEPLOYPATH_ALT/
+    - /bin/mkdir -p /home/fairiesd/public_html/Arcade/Beagle-Ride-DND
+    - /bin/mkdir -p /home/fairiesd/public_html/Arcade/Beagle_Ride_DND
+    - /bin/cp -R Public/Beagle_Ride_DND/. /home/fairiesd/public_html/Arcade/Beagle-Ride-DND/
+    - /bin/cp -R Public/Beagle_Ride_DND/. /home/fairiesd/public_html/Arcade/Beagle_Ride_DND/
